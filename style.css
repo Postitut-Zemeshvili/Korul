@@ -1,0 +1,101 @@
+* {
+    font-family: sans-serif;
+    margin: 1em;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 100%;
+    margin-bottom: 0.3em;
+    margin-top: 0;
+    margin-left: 0;
+    font-family: "Montserrat", "sans-serif";
+}
+h3 {
+    margin-left: 0em;
+    font-size: 1.5em;
+    font-family: "Lora", "sans-serif";
+    font-style: italic;
+}
+
+.TITLE {
+    width: 100%;
+    background-color: lightgray;
+}
+
+.MAIN_INDEX
+{
+    background-image: url("images/su_logo_30%.png");
+}
+
+.LANG_TEXT {
+    font-size: 3em;
+}
+.LANG_IMAGE {
+    width: 4.2em;
+    height: 2.4em;
+}
+
+.SECONDARY_INFO {
+    font-size: 1.3em;
+    font-style: italic;
+    vertical-align: super;
+}
+
+.BACK_ARROW {
+    height: 4em;
+    width: 3em;
+}
+.GO_BACK_TEXT {
+    font-size: 1.4em;
+    font-style: italic;
+    position: absolute;
+    top: 1em;
+    margin-left: 0.6em;
+}
+
+.POST_TABLE th, .POST_TABLE td {
+    padding-left: 1em;
+}
+
+.POST_TABLE th {
+    font-size: 1.2em;
+    font-variant: small-caps;
+}
+
+tr:hover {
+    background-color: rgb(255, 243, 168);
+}
+
+.post-container {
+    border: 0.1em solid grey;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.selector:hover {
+    cursor: pointer;
+}
+
+.comment {
+    border: 0.1em solid grey;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: 0.7em;
+}
+
+textarea {
+    width: 50em;
+    height: 10em;
+    margin: auto;
+    border: 0.4em solid red;
+    resize: none;
+}
+
+textarea:focus {
+    border: 0.6em solid red;
+}
+
+nav {
+    border: 0.1em solid black;
+}

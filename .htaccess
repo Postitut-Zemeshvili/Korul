@@ -1,0 +1,30 @@
+
+php_value auto_prepend_file C:\Users\elija\Documents\xxamp\htdocs\auto_prepend_file.php
+php_value auto_append_file C:\Users\elija\Documents\xxamp\htdocs\auto_append_file.php
+
+ErrorDocument 404 /errors/404.php
+
+<IFModule mod_rewrite.c>
+        RewriteEngine On
+
+        RewriteBase /
+
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteCond %{REQUEST_FILENAME} !-f
+
+        RewriteRule ^([^\.]+)$ $index.php [NC,L]
+
+        # Removes .phtml
+        RewriteCond %{THE_REQUEST} \s/+(.+?)\.phtml[\s?] [NC]
+        RewriteRule ^ /%1 [R=301,NE,L]
+
+        # Removes .php
+        RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+        RewriteRule ^ /%1 [R=301,NE,L]
+
+        # Removes .html
+        RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+        RewriteRule ^ /%1 [R=301,NE,L]
+</IFModule>
+
+DirectoryIndex index.php
